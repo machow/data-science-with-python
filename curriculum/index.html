@@ -1,0 +1,76 @@
+<html>
+<head>
+  <style>
+    /* Color of boxes on syllabus */
+    a.explore { background-color: #FC8D62; }
+    a.wrangle { background-color: #8DA0CB; }
+    a.program { background-color: #E78AC3; }
+    a.model { background-color: #A6D854; }
+    a.communicate { background-color: #FFD92F; }
+    a.workflow { background-color: #66C2A5; }
+
+    /* Have project box stretch across syllabus */
+    a.project {
+      margin: 0 10%;
+      width: 80%;
+      text-align: center;
+    }
+
+    table {
+      /*display: block;*/
+      max-width: 700px;
+      border-collapse: collapse;
+
+    }
+
+    th, tbody {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    td, th {
+      max-width: 80px;
+      text-align: left;
+      padding: 1px 10px;
+    }
+
+    td.note {
+      max-width: inherit;
+      width: 150px;
+    }
+
+    td.syl-unit a {
+      display: inline-block;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      padding: 5px;
+      color: #000;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+
+    /* Hide week numbers, except in the first row */
+    tr td.syl-week:first-child {
+      visibility: hidden;
+      color: grey;
+    }
+
+    tr:first-child td.syl-week {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+<thead><tr>
+<th></th><th>explore</th><th>wrangle</th><th>program</th><th>model</th><th>communicate</th><th>workflow</th><th></th><th></th><th>notes</th>
+</tr></thead>
+<tbody><tr><td class="syl-week">1</td><td class="syl-unit" colspan="3"><a class="explore">data basics</a></td><td></td><td></td><td></td><td></td><td></td><td class="note" rowspan="7">This material is taught in the <a href="https://learn.siuba.org">intro to siuba course</a>.</td></tr><tr><td class="syl-week">1</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">manipulation basics</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">1</td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="communicate">jupyter notebooks</a></td><td></td></tr><tr><td class="syl-week">1</td><td></td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="workflow">documentation</a></td></tr><tr><td class="syl-week">1</td><td class="syl-unit project" colspan="8"><a class="project">project: golden age of TV</a></td></tr><tr><td class="syl-week">1</td><td class="syl-unit project" colspan="8"><a class="project">case: space launches</a></td></tr><tr><td class="syl-week">1</td><td class="syl-unit project" colspan="8"><a class="project">project: tidyspotify</a></td></tr></tbody>
+<tbody><tr><td class="syl-week">2</td><td></td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="workflow">github basics</a></td></tr><tr><td class="syl-week">2</td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="communicate">labels</a></td><td></td></tr><tr><td class="syl-week">2</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">other single table verbs</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">2</td><td class="syl-unit" colspan="3"><a class="explore">visualization basics</a></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">2</td><td></td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="workflow">getting help</a></td></tr><tr><td class="syl-week">2</td><td></td><td></td><td class="syl-unit" colspan="3"><a class="program">data structure basics</a></td><td></td><td></td><td></td></tr><tr><td class="syl-week">2</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">tidy data</a></td><td></td><td></td><td></td><td></td></tr></tbody>
+<tbody><tr><td class="syl-week">3</td><td></td><td></td><td class="syl-unit" colspan="3"><a class="program">siuba basics</a></td><td></td><td></td><td></td></tr><tr><td class="syl-week">3</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">parsing basics</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">3</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">joining data</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">3</td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="communicate">scales</a></td><td></td></tr><tr><td class="syl-week">3</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">spreading and gathering</a></td><td></td><td></td><td></td><td></td></tr></tbody>
+<tbody><tr><td class="syl-week">4</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">date time basics</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">4</td><td class="syl-unit" colspan="3"><a class="explore">exploratory data analysis (1d)</a></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">4</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">string basics</a></td><td></td><td></td><td></td><td></td></tr><tr><td class="syl-week">4</td><td></td><td></td><td class="syl-unit" colspan="3"><a class="program">iteration</a></td><td></td><td></td><td></td></tr><tr><td class="syl-week">4</td><td></td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="communicate">positioning</a></td><td></td></tr><tr><td class="syl-week">4</td><td></td><td class="syl-unit" colspan="3"><a class="wrangle">missing values</a></td><td></td><td></td><td></td><td></td></tr></tbody>
+<tbody><tr><td class="syl-week">6</td><td></td><td></td><td></td><td class="syl-unit" colspan="3"><a class="model">model intuition</a></td><td></td><td></td></tr></tbody>
+</table>
+
+</body>
+</html>
